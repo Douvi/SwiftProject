@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Owi-d5-HbJ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Fruit Details View Controller-->
+        <scene sceneID="5or-5S-qbF">
+            <objects>
+                <viewController storyboardIdentifier="FruitDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Owi-d5-HbJ" customClass="FruitDetailsViewController" customModule="myAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Zm-qs-lb5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mtn-4l-I1Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="koR-sF-9M1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boy-Xf-uFt">
+                                <rect key="frame" x="279" y="30" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="blD-Fv-MBL">
+                                <rect key="frame" x="0.0" y="76" width="600" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="d4N-Yk-O4y"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JmW-Gq-d2l">
+                                <rect key="frame" x="0.0" y="276" width="600" height="324"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="blD-Fv-MBL" secondAttribute="centerX" id="KIT-B9-KhL"/>
+                            <constraint firstItem="blD-Fv-MBL" firstAttribute="top" secondItem="boy-Xf-uFt" secondAttribute="bottom" constant="25" id="OxC-Y5-uVy"/>
+                            <constraint firstAttribute="bottom" secondItem="JmW-Gq-d2l" secondAttribute="bottom" id="PXI-uN-xYb"/>
+                            <constraint firstItem="blD-Fv-MBL" firstAttribute="left" secondItem="koR-sF-9M1" secondAttribute="left" id="cCy-nf-OAh"/>
+                            <constraint firstAttribute="trailing" secondItem="JmW-Gq-d2l" secondAttribute="trailing" id="hp0-Px-bHe"/>
+                            <constraint firstAttribute="centerX" secondItem="boy-Xf-uFt" secondAttribute="centerX" id="nvR-gd-9O5"/>
+                            <constraint firstAttribute="right" secondItem="blD-Fv-MBL" secondAttribute="right" id="sMU-eC-6sf"/>
+                            <constraint firstItem="JmW-Gq-d2l" firstAttribute="top" secondItem="blD-Fv-MBL" secondAttribute="bottom" id="tJ4-Vu-fut"/>
+                            <constraint firstItem="JmW-Gq-d2l" firstAttribute="leading" secondItem="koR-sF-9M1" secondAttribute="leading" id="tzq-xU-1An"/>
+                            <constraint firstItem="boy-Xf-uFt" firstAttribute="top" secondItem="1Zm-qs-lb5" secondAttribute="bottom" constant="10" id="wfC-ta-mJE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentDetails" destination="JmW-Gq-d2l" id="1hQ-zh-cIt"/>
+                        <outlet property="image" destination="blD-Fv-MBL" id="NFD-tc-O4e"/>
+                        <outlet property="label" destination="boy-Xf-uFt" id="l7D-Ff-jyX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Efe-Ue-lg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292" y="364"/>
+        </scene>
+    </scenes>
+</document>
